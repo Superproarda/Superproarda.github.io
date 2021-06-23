@@ -21,15 +21,23 @@
     </div>
     <script>
         function z() {
-          var command=document.getElementById("text");
-          if(command == "/hi")
-      {
-        alert("Selam! Nasılsın?")
-      }
-      else if(command=="/what")
-     {
-        alert("Ne oldu?")
-     }
+          var command=document.getElementById("text").value;
+          switch(command){
+            case "help":
+            alert("Bilinen komutlar: help, hi, what");
+            break;
+           case "hi":
+            alert("Selam! nasılsın?");
+            break;
+           case "what":
+            alert("Ne oldu?");
+            break;
+           case "sudenaz":
+            alert("O da kim?   ...");
+            break;
+           default:
+            alert("Birşey yaz ve Submit tuşuna tıkla.");
+          }
       }
        </script>
     <div class="fixed bottom-0 left-0 h-10 w-full bg-gray-600 grid grid-rows-3 grid-cols-1 md:grid-cols-3 md:grid-rows-1 text-white">
