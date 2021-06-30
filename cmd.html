@@ -15,7 +15,7 @@
     <div class="w-1/3 text-center"><a href="egg.html">Yumurta</a></div>
     </div>
     <div id="bg" class="mt-10 mb-10 h-screen w-full font-mono flex-1 flex-col bg-black text-white">
-      <div class="m-2">Arda Resmî Sitesi [Versiyon 0.4]<br>Copyright? (js) 2021 Arda Uzun. All wrongs reserved.</div>
+      <div class="m-2">Arda Resmî Sitesi [Versiyon 1.3]<br>Copyright? (js) 2021 Arda Uzun. All wrongs reserved.</div>
       <div class="m-2"><input class="bg-black" type="text"  placeholder="Type something>_" id="text"/></div>
       <div class="m-2"><input class="text-black" type="button" onclick="z()" value="Submit"/></div>
     </div>
@@ -24,10 +24,19 @@
           var command=document.getElementById("text").value;
           switch(command){
             case "help":
-            alert("Bilinen komutlar: help, hi, what");
+            alert("Bilinen komutlar: help, dir, hi, what, joke, artunes");
             break;
            case "hi":
             alert("Selam! nasılsın?");
+            break;
+            case "dir":
+            alert("Üzgünüm ama bu gerçek bir komut istemi değil.");
+            break;
+            case "joke":
+            alert("Küçük su birkintisine ne denir?.....Sucuk......Ne? espri yapmamı isteyen sendin.");
+            break;
+            case "artunes":
+            alert("Artunes sitesine kısayol yapacak kadar iyi değilim.");
             break;
            case "what":
             alert("Ne oldu?");
